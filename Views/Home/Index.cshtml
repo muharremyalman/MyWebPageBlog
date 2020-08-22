@@ -1,0 +1,77 @@
+﻿@using MyWebPageProje.Models.Siniflar
+@model List<Blog>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+    <div class"content">
+        <div class="wrap">
+            <div class="wrapper">
+                <div class="con-top">
+                    <!-- Required meta tags -->
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+                    <!-- Bootstrap CSS -->
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+                    <script src="~/web/js/script.js"></script>
+                    <script src="~/web/js/jquery.min.js"></script>
+                    <style>
+                        .fas {
+                            cursor: pointer;
+                        }
+                    </style>
+                    <div class="container mt-1">
+                        <div class="row">
+                            <div class="col-md-10">
+
+                                <div class="card">
+                                    <img class="card-img-top" src="~/web/css/img/slider5.jpg" alt="">
+
+
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Denizbank Şirketinde İlk Staj Deneyimim</h5>
+                                        <p class="card-text"></p>
+                                        <a class="card-link"</a>
+                                    </div>
+                                    <div class="card-footer">
+                                        <i class="fas fa-arrow-circle-left fa-2x arrow"></i>
+                                        <i class="fas fa-arrow-circle-right fa-2x arrow"></i>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h3>Kişisel Bloğuma Hoşgeldiniz !</h3>
+                    <p>Bu proje de hayatımdan hareketle deneyimlediğim,gözlemlediğim,yapmaktan mutluluk duyduğum içerikleri sizlerle paylaşmak için kodlamasını tamamen kendim yaptığım mvc üzerine kurulu dinamik bir web projesi geliştirdim.Bir yönetim bilişim sistemleri öğrencisi olarak okulumda öğrendiklerimi,kendi çabalarımla deneyimlediklerimi,hem de yapmaktan zevk duyduğum nesir ve şiir yazarlığı,seslendiriciliğinden oluşan yazılarımı sizlerle paylaşma niyetindeyim.Umuyorum ki,samimiyetimi beğenirsiniz,keyifli okumalar dilerim.Hayatımızda mutluluk hep bizimle olması dileğiyle...</p>
+                </div>
+                @Html.Action("Partial1", "Home")
+                <div class="grids">
+                    <div class="box1">
+                        @Html.Action("Partial3", "Home")
+                        @Html.Action("Partial4", "Home")
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+

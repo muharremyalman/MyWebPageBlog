@@ -1,0 +1,53 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Muharrem Yalman'ın Bloğu</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="~/web/css/style.css" type="text/css" media="all" />
+   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+<body>
+
+    <div class="header-bottom">
+        <div class="wrap">
+            <ul id="nav">
+                <li><a href="/Home/Index/">Ana Sayfa</a></li>
+                <li><a class="hsubs" href="/About/Index/">Hakkımda</a></li>
+                <li>
+
+                    <ul class="subs">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li><a class="hsubs" href="/Blog/Index/">Bloğum</a></li>
+                <li><a class="hsubs" href="/Home/Contact/">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+       
+
+
+
+
+    <div class"content">
+        @RenderBody()
+    </div>
+    <div class="footer-bottom">
+        <div class="wrap">
+            <div class="copy">
+                <p>&copy; 2020 Kişisel Blog. Tüm hakları saklıdır | By Muharrem Yalman </a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

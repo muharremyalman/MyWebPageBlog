@@ -1,0 +1,74 @@
+﻿
+@using MyWebPageProje.Models.Siniflar
+@model List<İletisim>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Muharrem Yalman'ın Bloğu</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+
+
+    <div class="contact">
+        <div class="wrap">
+            <div class="contact-top">
+                <h3>Muharrem Yalman'a Ulaş</h3>
+
+            </div>
+
+
+
+            <div class="form">
+                <form class="cmxform" id="contactForm" method="post">
+                    <div>
+                        <input type="text" class="textbox" value="Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+                    </div>
+                    <div>
+                        <input type="text" class="textbox" value="Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+                    </div>
+
+                    <div>
+                        <p><span class="read">Gönder</span></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form1">
+                <div>
+                    <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message:</textarea>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="contact-bottom">
+                <div class="contact-left">
+                    <div class="contact-add">
+
+                        <h3>İLETİŞİM</h3>
+
+                        <br />
+                        <p>Sosyal Medya:<a>linkedin.com/in/muharremyalman</a></p>
+
+                        <p>Email:<a>yalmanmuharrem507@gmail.com</a></p>
+                    </div>
+
+                    <br /> <br /><br /><br /><br /><br /><br /><br /><br />
+
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+

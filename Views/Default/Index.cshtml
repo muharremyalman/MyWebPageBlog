@@ -1,0 +1,95 @@
+﻿@using MyWebPageProje.Models.Siniflar
+@model List<Blog>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!DOCTYPE HTML>
+<html>
+<body>
+    <div class="header-banner">
+        <div class="wrap">
+            <div class="banner">
+                <div class="indent">
+                    <h2 class="indent-left margin-bot" style="margin-left:150px">Muharrem Yalman'ın Bloğu</h2>
+                    <div class="banner-left">
+                        <div class="con-text">
+                            <div class="grid1-img">
+
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Ana Sayfa</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="con-text">
+                            <div class="grid1-img">
+
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Hakkımda</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="con-text">
+                            <div class="grid1-img">
+
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Bloğum</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="con-text">
+                            <div class="grid1-img">
+
+                            </div>
+                            <div class="grid1-desc">
+                                <p>İletişim</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="header_bottom_right_images">
+
+                        <div class="slider" style="width:650px;height:365px">
+                            <ul class="rslides" id="slider1">
+                                @foreach (var x in Model)
+                                {
+                                    <li><img src="@x.BlogImage" alt=""></li>
+
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class"content">
+        <div class="wrap">
+            <div class="wrapper">
+                <div class="con-top">
+                    <h3>Kişisel Bloğuma Hoşgeldiniz !</h3>
+                    <p>Bu proje de hayatımdan hareketle deneyimlediğim,gözlemlediğim,yapmaktan mutluluk duyduğum içerikleri sizlerle paylaşmak için kodlamasını tamamen kendim yaptığım mvc üzerine kurulu dinamik bir web projesi geliştirdim.Bir yönetim bilişim sistemleri öğrencisi olarak okulumda öğrendiklerimi,kendi çabalarımla deneyimlediklerimi,hem de yapmaktan zevk duyduğum nesir ve şiir yazarlığı,seslendiriciliğinden oluşan yazılarımı sizlerle paylaşma niyetindeyim.Umuyorum ki,samimiyetimi beğenirsiniz,keyifli okumalar dilerim.Hayatımızda mutluluk hep bizimle olması dileğiyle...</p>
+                </div>
+                @Html.Action("Partial1", "Default")
+                <div class="grids">
+                    <div class="box1">
+                        @Html.Action("Partial3", "Default")
+                        @Html.Action("Partial4", "Default")
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
