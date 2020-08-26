@@ -1,6 +1,7 @@
 # MyWebPageBlog
 ## Projenin Amacı
-**MVC bilgilerimi pekiştirerek,kendi sitemde bloglarımı dinamik şekilde paylaşıp yorum yaptırabileceğim bir web sitesi kodlamak** <br><br>
+**MVC bilgilerimi pekiştirerek,kendi sitemde bloglarımı dinamik şekilde paylaşıp yorum yaptırabileceğim bir web sitesi kodlamak** <br>
+**Anasayfada gördüğünüz slideri kendim yaptım**<br>
 [Siteyi görmek için tıklayın](http://www.muharremyalman.com)<br>
 ## Admin Paneli
 **Bloglar kısmında bloglarımı silip,güncelleyebileceğim**,<br>
